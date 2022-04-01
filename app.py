@@ -17,7 +17,11 @@ def predict():
     int_features = [float(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
-    output = round(prediction[0], 2) 
+    output = round(prediction[0], 2)
+    if output == 0:
+        output = "CKD"
+    else:
+        output = "Not CKD" 
     return render_template('index.html', prediction_text='Your Result :{}'.format(output))
 
 if __name__ == "__main__":
