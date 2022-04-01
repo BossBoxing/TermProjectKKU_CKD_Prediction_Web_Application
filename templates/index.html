@@ -1,17 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
-<h1>Hello BillyForce</h1>
+<h1>BillyForce</h1>
 <br>
 <div class="login">
     <h1>Predict Kidney Disease System</h1>
     <h3>PrototypeTest System</h3><br>
 
     <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="id" placeholder="ID" required="required" />
         <input type="text" name="age" placeholder="Age" required="required" />
         <input type="text" name="blood_pressure" placeholder="Blood Pressure" required="required" />
-        <input type="text" name="specific_gravity" placeholder="Specific Gravity" required="required" />
         <input type="text" name="albumin" placeholder="Albumin" required="required" />
-        <input type="text" name="age" placeholder="Age" required="required" />
+        <input type="text" name="blood_glucose_random" placeholder="Blood Glucose Random" required="required" />
+        <input type="text" name="serum_creatinine" placeholder="Serum Creatinine" required="required" />
+        <input type="text" name="haemoglobin" placeholder="Haemoglobin" required="required" />
+        <input type="text" name="packed_cell_volume" placeholder="Packed Cell Volume" required="required" />
+        <input type="text" name="red_blood_cell_count" placeholder="Red Blood Cell Count" required="required" />
+        <input type="text" name="hypertension" placeholder="Hypertension" required="required" />
+        <input type="text" name="diabetes_mellitus" placeholder="Diabetes Mellitus" required="required" />
 
         <button type="submit" class="btn">Predict</button>
     </form>
