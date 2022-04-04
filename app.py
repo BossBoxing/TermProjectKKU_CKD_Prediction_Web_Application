@@ -10,6 +10,10 @@ model = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+@app.route('/prediction')
+def prediction_page():
+    return render_template('prediction.html')
+
 #To use the predict button in our web-app
 @app.route('/predict',methods=['POST'])
 def predict():
