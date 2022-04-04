@@ -19,19 +19,13 @@ def prediction_page():
 def predict():
     #For rendering results on HTML GUI
     int_features = [float(x) for x in request.form.values()]
-    print("******************************")
-    print(int_features)
     final_features = [np.array(int_features)]
-    print(final_features)
     prediction = model.predict(final_features)
     output = round(prediction[0], 2)
-    print(prediction)
-    print(round(prediction[0], 2))
     if output == 0:
         output = "CKD"
     else:
         output = "Not CKD" 
-    print("******************************")
     return render_template('index.html', prediction_text='Your Result :{}'.format(output))
 
 if __name__ == "__main__":
