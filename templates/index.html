@@ -38,6 +38,18 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">CKD Prediction Web App</a>
+      
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+      </nav>
     <!-- ======= Top Bar ======= -->
     <!-- <div id="topbar" class="d-flex align-items-center fixed-top">
     </div> -->
@@ -54,22 +66,22 @@
     </header> -->
     <!-- End Header -->
 
-    <header style="background-color: rgb(255, 255, 255);">
+    <!-- <header style="background-color: rgb(255, 255, 255);">
         <div class="container d-flex align-items-center">
             <a href="/" class="logo me-auto"><img src="../static/assets/img/new_logo.png" width="300"></a>
 
             <a href="/" class="appointment-btn scrollto"><span class="d-none d-md-inline">Prediction</span></a>
             <a href="/about" class="appointment-btn scrollto"><span class="d-none d-md-inline">About</span></a>
         </div>
-    </header>
+    </header> -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
+    <!-- <section id="hero">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox"> -->
 
                 <!-- Slide 1 -->
-                <div class="carousel-item active" style="background-color: rgb(17, 142, 173);">
+                <div class="carousel-item active" style="background-color: rgb(255, 255, 255);">
                     <div class="container">
                         <br>
                         <h2>ระบบทำนายโรคไตเรื้อรัง</h2>
@@ -260,15 +272,21 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">PREDICT</button>
+                                    <button class="btn btn-primary" type="submit" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">PREDICT</button>
+                                </div>
+                                <div class="col-13">
+                                    <br>
+                                    <br>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
+            <!-- </div>
         </div>
-    </section><!-- End Hero -->
+    </section> -->
+    <!-- End Hero -->
 
     <!-- Vendor JS Files -->
     <script src="../static/assets/vendor/purecounter/purecounter.js"></script>
