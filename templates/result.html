@@ -27,15 +27,6 @@
 
     <!-- Template Main CSS File -->
     <link href="../static/assets/css/style.css" rel="stylesheet">
-    <style>
-        #hero {
-            width: 100%;
-            height: 100vh;
-            background-color: rgba(60, 60, 60, 0.8);
-            overflow: hidden;
-            position: relative;
-        }
-    </style>
 
     <!-- =======================================================
   * Template Name: Medicio - v4.7.0
@@ -47,75 +38,82 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">CKD Prediction Web App</a>
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
     <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-flex align-items-center fixed-top">
-    </div>
+    <!-- <div id="topbar" class="d-flex align-items-center fixed-top">
+    </div> -->
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
+    <!-- <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
+            <a href="/" class="logo me-auto"><img src="../static/assets/img/new_logo.png" width="300"></a>
+            <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">CKD Prediction System</h1>
+            <a href="/" class="appointment-btn scrollto"><span class="d-none d-md-inline">Prediction</span></a>
+            <a href="/about" class="appointment-btn scrollto"><span class="d-none d-md-inline">About</span></a>
+        </div>
+    </header> -->
+    <!-- End Header -->
+
+    <!-- <header style="background-color: rgb(255, 255, 255);">
+        <div class="container d-flex align-items-center">
             <a href="/" class="logo me-auto"><img src="../static/assets/img/new_logo.png" width="300"></a>
 
             <a href="/" class="appointment-btn scrollto"><span class="d-none d-md-inline">Prediction</span></a>
             <a href="/about" class="appointment-btn scrollto"><span class="d-none d-md-inline">About</span></a>
-
         </div>
-    </header><!-- End Header -->
+    </header> -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
+    <!-- <section id="hero">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox"> -->
 
-                <!-- Slide 1 -->
-                <div class="carousel-item active" style="background-image: url(../static/assets/img/slide/slide-1.jpg);">
-                    <div class="container">
-                        <h2>Prediction Result</h2>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Click for your result
-                        </button>
-
-                        <!-- Modal -->
-                        
-                    </div>
+    <!-- Slide 1 -->
+    <div class="carousel-item active" style="background-color: rgb(255, 255, 255);">
+        <div class="container">
+            <br>
+            <h2 style="text-align: center;">ระบบทำนายโรคไตเรื้อรัง</h2>
+            <br>
+            {% if output == "Not CKD" %}
+            <div class="card b bg" style="text-align: center;">
+                <h5 class="card-header" style="background-color: green; color:white;">ผลการทำนาย</h5>
+                <div class="card-body ">
+                    <h5 class="card-title">ยินดีด้วย คุณไม่เป็นโรคไตเรื้อรัง</h5>
+                    <p class="card-text">รักษาสุขภาพ และออกกำลังเป็นประจำ</p>
+                    <a href="/" class="btn btn-success">ทำนาย อีกครั้ง</a>
                 </div>
             </div>
+            {% else %}
+            <div class="card b bg" style="text-align: center;">
+                <h5 class="card-header" style="background-color: rgb(240, 54, 54); color:white;">ผลการทำนาย</h5>
+                <div class="card-body ">
+                    <h5 class="card-title">คุณเป็นโรคไตเรื้อรัง</h5>
+                    <p class="card-text">โปรดปรึกษาแพทย์ที่เชี่ยวชาญ</p>
+                    <a href="/" class="btn btn-success">ทำนาย อีกครั้ง</a>
+                </div>
+            </div>
+            {% endif %}
         </div>
-    </section><!-- End Hero -->
-
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Result</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        {% if output == "CDK" %}
-                                            <h4>You are CKD.</h4><br>
-                                            You should see a doctor.
-                                        {% else %}
-                                            <h4>You are not CKD.</h4><br>
-                                            Congraturation.
-                                        {% endif %}
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <a href="/"><button type="button" class="btn btn-primary">Predict again</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-    <!-- Button trigger modal -->
-
+    </div>
+    <!-- </div>
+        </div>
+    </section> -->
+    <!-- End Hero -->
 
     <!-- Vendor JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../static/assets/vendor/purecounter/purecounter.js"></script>
     <script src="../static/assets/vendor/aos/aos.js"></script>
     <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
