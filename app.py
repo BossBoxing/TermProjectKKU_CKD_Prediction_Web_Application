@@ -23,11 +23,12 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
     output = round(prediction[0], 2)
-    if output == 0:
-        output = "CKD"
-    else:
-        output = "Not CKD" 
-    return render_template('result.html', prediction_text='Your Result :{}'.format(output))
+    # print(output)
+    # if output == 0:
+    #     output = "CKD"
+    # else:
+    #     output = "Not CKD" 
+    return render_template('result.html', prediction_text='Your Result :{}'.format(output),output=output)
 
 if __name__ == "__main__":
     app.run(debug=True)

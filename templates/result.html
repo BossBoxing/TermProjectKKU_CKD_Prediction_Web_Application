@@ -45,9 +45,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
-            </li>
+            </li> -->
         </ul>
     </nav>
     <!-- ======= Top Bar ======= -->
@@ -86,7 +86,7 @@
             <br>
             <h2 style="text-align: center;">ระบบทำนายโรคไตเรื้อรัง</h2>
             <br>
-            {% if output == "Not CKD" %}
+            {% if output == 1 %}
             <div class="card b bg" style="text-align: center;">
                 <h5 class="card-header" style="background-color: green; color:white;">ผลการทำนาย</h5>
                 <div class="card-body ">
@@ -99,9 +99,10 @@
             <div class="card b bg" style="text-align: center;">
                 <h5 class="card-header" style="background-color: rgb(240, 54, 54); color:white;">ผลการทำนาย</h5>
                 <div class="card-body ">
-                    <h5 class="card-title">คุณเป็นโรคไตเรื้อรัง</h5>
+                    <h5 class="card-title">คุณเสี่ยงเป็นโรคไตเรื้อรัง</h5>
                     <p class="card-text">โปรดปรึกษาแพทย์ที่เชี่ยวชาญ</p>
                     <a href="/" class="btn btn-success">ทำนาย อีกครั้ง</a>
+                    <a href="/" class="btn btn-success">ศึกษาเพิ่มเติม</a>
                 </div>
             </div>
             {% endif %}
