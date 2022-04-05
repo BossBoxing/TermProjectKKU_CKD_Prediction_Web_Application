@@ -10,9 +10,9 @@ model = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
-@app.route('/prediction')
-def prediction_page():
-    return render_template('prediction.html')
+@app.route('/about')
+def about_page():
+    return render_template('about.html')
 
 #To use the predict button in our web-app
 @app.route('/predict',methods=['POST'])
@@ -26,7 +26,7 @@ def predict():
         output = "CKD"
     else:
         output = "Not CKD" 
-    return render_template('index.html', prediction_text='Your Result :{}'.format(output))
+    return render_template('result.html', prediction_text='Your Result :{}'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
