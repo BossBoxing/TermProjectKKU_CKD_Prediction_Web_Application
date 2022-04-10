@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220411 01:58:02.770" rpa="false" schemaversion="2">
+<suite id="s1" name="Run" source="C:\Users\admin\Desktop\project จบ\TermProjectKKU_CKD_Prediction_Web_Application\robot_testcase\run.robot">
+<test id="s1-t1" name="NotCKD">
+<kw name="Open Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:5000</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220411 01:58:03.009" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5000'.</msg>
+<status status="PASS" starttime="20220411 01:58:03.009" endtime="20220411 01:58:08.266"/>
+</kw>
+<status status="PASS" starttime="20220411 01:58:03.008" endtime="20220411 01:58:08.266"/>
+</kw>
+<kw name="Input Parameter NotCKD">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:age</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.267" endtime="20220411 01:58:08.288"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>age</arg>
+<arg>${AGE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:08.289" level="INFO">Typing text '42' into text field 'age'.</msg>
+<status status="PASS" starttime="20220411 01:58:08.288" endtime="20220411 01:58:08.358"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:blood_pressure</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.358" endtime="20220411 01:58:08.379"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>blood_pressure</arg>
+<arg>${BP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:08.380" level="INFO">Typing text '120' into text field 'blood_pressure'.</msg>
+<status status="PASS" starttime="20220411 01:58:08.379" endtime="20220411 01:58:08.448"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:albumin</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.448" endtime="20220411 01:58:08.469"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:albumin</arg>
+<arg>${Albumin}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:08.470" level="INFO">Selecting options from selection list 'name:albumin' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:08.470" endtime="20220411 01:58:08.513"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:sugar</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.514" endtime="20220411 01:58:08.532"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:sugar</arg>
+<arg>${Sugar}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:08.533" level="INFO">Selecting options from selection list 'name:sugar' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:08.532" endtime="20220411 01:58:08.579"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:blood_glucose_random</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.579" endtime="20220411 01:58:08.596"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>blood_glucose_random</arg>
+<arg>${BGR}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:08.597" level="INFO">Typing text '80' into text field 'blood_glucose_random'.</msg>
+<status status="PASS" starttime="20220411 01:58:08.597" endtime="20220411 01:58:08.661"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:blood_urea</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.661" endtime="20220411 01:58:08.694"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>blood_urea</arg>
+<arg>${BUN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:08.694" level="INFO">Typing text '90' into text field 'blood_urea'.</msg>
+<status status="PASS" starttime="20220411 01:58:08.694" endtime="20220411 01:58:08.762"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:serum_creatinine</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.762" endtime="20220411 01:58:08.781"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>serum_creatinine</arg>
+<arg>${SC}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:08.782" level="INFO">Typing text '0.8' into text field 'serum_creatinine'.</msg>
+<status status="PASS" starttime="20220411 01:58:08.782" endtime="20220411 01:58:08.848"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:haemoglobin</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.848" endtime="20220411 01:58:08.871"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>haemoglobin</arg>
+<arg>${HEMO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:08.871" level="INFO">Typing text '14.2' into text field 'haemoglobin'.</msg>
+<status status="PASS" starttime="20220411 01:58:08.871" endtime="20220411 01:58:08.944"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:packed_cell_volume</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:08.944" endtime="20220411 01:58:08.962"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>packed_cell_volume</arg>
+<arg>${PCV}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:08.962" level="INFO">Typing text '51' into text field 'packed_cell_volume'.</msg>
+<status status="PASS" starttime="20220411 01:58:08.962" endtime="20220411 01:58:09.031"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:red_blood_cell_count</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:09.031" endtime="20220411 01:58:09.051"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>red_blood_cell_count</arg>
+<arg>${RBC}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:09.051" level="INFO">Typing text '4.7' into text field 'red_blood_cell_count'.</msg>
+<status status="PASS" starttime="20220411 01:58:09.051" endtime="20220411 01:58:09.130"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:hypertension</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:09.130" endtime="20220411 01:58:09.154"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:hypertension</arg>
+<arg>${HP}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:09.154" level="INFO">Selecting options from selection list 'name:hypertension' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:09.154" endtime="20220411 01:58:09.198"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:diabetes_mellitus</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:09.198" endtime="20220411 01:58:09.219"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:diabetes_mellitus</arg>
+<arg>${DM}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:09.220" level="INFO">Selecting options from selection list 'name:diabetes_mellitus' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:09.220" endtime="20220411 01:58:09.265"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:coronaru_artery_disease</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:09.265" endtime="20220411 01:58:09.285"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:coronaru_artery_disease</arg>
+<arg>${CAD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:09.286" level="INFO">Selecting options from selection list 'name:coronaru_artery_disease' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:09.286" endtime="20220411 01:58:09.326"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:appetite</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:09.327" endtime="20220411 01:58:09.344"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:appetite</arg>
+<arg>${APPE}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:09.344" level="INFO">Selecting options from selection list 'name:appetite' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:09.344" endtime="20220411 01:58:09.380"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:anemia</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:09.380" endtime="20220411 01:58:09.394"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:anemia</arg>
+<arg>${ANE}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:09.395" level="INFO">Selecting options from selection list 'name:anemia' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:09.395" endtime="20220411 01:58:09.431"/>
+</kw>
+<status status="PASS" starttime="20220411 01:58:08.267" endtime="20220411 01:58:09.431"/>
+</kw>
+<status status="PASS" starttime="20220411 01:58:03.008" endtime="20220411 01:58:09.432"/>
+</test>
+<test id="s1-t2" name="CKD">
+<kw name="Open Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:5000</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220411 01:58:09.434" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5000'.</msg>
+<status status="PASS" starttime="20220411 01:58:09.434" endtime="20220411 01:58:11.821"/>
+</kw>
+<status status="PASS" starttime="20220411 01:58:09.434" endtime="20220411 01:58:11.821"/>
+</kw>
+<kw name="Input Parameter CKD">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:age</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:11.822" endtime="20220411 01:58:11.852"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>age</arg>
+<arg>${AGE_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:11.853" level="INFO">Typing text '48' into text field 'age'.</msg>
+<status status="PASS" starttime="20220411 01:58:11.852" endtime="20220411 01:58:11.966"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:blood_pressure</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:11.966" endtime="20220411 01:58:11.999"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>blood_pressure</arg>
+<arg>${BP_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:12.000" level="INFO">Typing text '70' into text field 'blood_pressure'.</msg>
+<status status="PASS" starttime="20220411 01:58:11.999" endtime="20220411 01:58:12.131"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:albumin</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:12.131" endtime="20220411 01:58:12.162"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:albumin</arg>
+<arg>${Albumin_CKD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:12.163" level="INFO">Selecting options from selection list 'name:albumin' by index 4.</msg>
+<status status="PASS" starttime="20220411 01:58:12.163" endtime="20220411 01:58:12.312"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:sugar</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:12.313" endtime="20220411 01:58:12.338"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:sugar</arg>
+<arg>${Sugar_CKD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:12.339" level="INFO">Selecting options from selection list 'name:sugar' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:12.339" endtime="20220411 01:58:12.402"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:blood_glucose_random</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:12.402" endtime="20220411 01:58:12.431"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>blood_glucose_random</arg>
+<arg>${BGR_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:12.431" level="INFO">Typing text '117' into text field 'blood_glucose_random'.</msg>
+<status status="PASS" starttime="20220411 01:58:12.431" endtime="20220411 01:58:12.506"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:blood_urea</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:12.506" endtime="20220411 01:58:12.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>blood_urea</arg>
+<arg>${BUN_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:12.530" level="INFO">Typing text '56' into text field 'blood_urea'.</msg>
+<status status="PASS" starttime="20220411 01:58:12.529" endtime="20220411 01:58:12.695"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:serum_creatinine</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:12.695" endtime="20220411 01:58:12.737"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>serum_creatinine</arg>
+<arg>${SC_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:12.737" level="INFO">Typing text '3.8' into text field 'serum_creatinine'.</msg>
+<status status="PASS" starttime="20220411 01:58:12.737" endtime="20220411 01:58:12.910"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:haemoglobin</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:12.910" endtime="20220411 01:58:12.944"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>haemoglobin</arg>
+<arg>${HEMO_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:12.945" level="INFO">Typing text '11.2' into text field 'haemoglobin'.</msg>
+<status status="PASS" starttime="20220411 01:58:12.945" endtime="20220411 01:58:13.065"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:packed_cell_volume</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:13.065" endtime="20220411 01:58:13.087"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>packed_cell_volume</arg>
+<arg>${PCV_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:13.088" level="INFO">Typing text '32' into text field 'packed_cell_volume'.</msg>
+<status status="PASS" starttime="20220411 01:58:13.087" endtime="20220411 01:58:13.214"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:red_blood_cell_count</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:13.214" endtime="20220411 01:58:13.237"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>red_blood_cell_count</arg>
+<arg>${RBC_CKD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 01:58:13.237" level="INFO">Typing text '3.9' into text field 'red_blood_cell_count'.</msg>
+<status status="PASS" starttime="20220411 01:58:13.237" endtime="20220411 01:58:13.323"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:hypertension</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:13.323" endtime="20220411 01:58:13.346"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:hypertension</arg>
+<arg>${HP_CKD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:13.346" level="INFO">Selecting options from selection list 'name:hypertension' by index 1.</msg>
+<status status="PASS" starttime="20220411 01:58:13.346" endtime="20220411 01:58:13.430"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:diabetes_mellitus</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:13.430" endtime="20220411 01:58:13.460"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:diabetes_mellitus</arg>
+<arg>${DM_CKD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:13.461" level="INFO">Selecting options from selection list 'name:diabetes_mellitus' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:13.461" endtime="20220411 01:58:13.536"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:coronaru_artery_disease</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:13.536" endtime="20220411 01:58:13.562"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:coronaru_artery_disease</arg>
+<arg>${CAD_CKD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:13.562" level="INFO">Selecting options from selection list 'name:coronaru_artery_disease' by index 0.</msg>
+<status status="PASS" starttime="20220411 01:58:13.562" endtime="20220411 01:58:13.614"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:appetite</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:13.615" endtime="20220411 01:58:13.639"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:appetite</arg>
+<arg>${APPE_CKD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:13.639" level="INFO">Selecting options from selection list 'name:appetite' by index 1.</msg>
+<status status="PASS" starttime="20220411 01:58:13.639" endtime="20220411 01:58:13.739"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:anemia</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220411 01:58:13.739" endtime="20220411 01:58:13.759"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>name:anemia</arg>
+<arg>${ANE_CKD}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220411 01:58:13.760" level="INFO">Selecting options from selection list 'name:anemia' by index 1.</msg>
+<status status="PASS" starttime="20220411 01:58:13.759" endtime="20220411 01:58:13.835"/>
+</kw>
+<status status="PASS" starttime="20220411 01:58:11.822" endtime="20220411 01:58:13.835"/>
+</kw>
+<status status="PASS" starttime="20220411 01:58:09.433" endtime="20220411 01:58:13.836"/>
+</test>
+<status status="PASS" starttime="20220411 01:58:02.773" endtime="20220411 01:58:13.837"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Run">Run</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
